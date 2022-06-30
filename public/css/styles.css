@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+
+  background-color: #ebebeb;
+  height: 100vh;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+i[class*="search"] {
+  display: none;
+}
+
+input:focus {
+  border-bottom: 2px solid #38b54a;
+  font-family: "Roboto", sans-serif;
+}
+nav p {
+  margin-bottom: 25px;
+}
+/* ***************inicio header********* */
+header {
+  background-color: #eac926;
+  padding: 20px 10px;
+}
+.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo,
+.form {
+  width: 50%;
+  padding: 0 10px;
+}
+header input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+input::placeholder {
+  font-size: 0.9em;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding-left: 50px;
+}
+.header-text {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+.container-nav {
+  display: none;
+}
+.container-nav a {
+  transition: all 0.2s;
+}
+.container-nav a:hover {
+  text-decoration: underline;
+}
+
+.burger-menu {
+  text-align: center;
+}
+.burger-menu i {
+  color: white;
+  font-size: 25px;
+  background-color: #1259c3;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+/* ************* fin  header *************** */
+
+/* ************** inicio  main ***********   */
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+h1 {
+  margin-top: 0;
+  display: none;
+}
+h2 {
+  color: #666;
+  font-weight: bolder;
+  font-size: 24px;
+  margin-top: 0;
+}
+main article {
+  margin: 10px 0;
+  background-color: #fff;
+  transition: all 0.8s;
+}
+
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  color: #39b54a;
+  border: 1px solid;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: all 0.3s;
+}
+.container {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.precios {
+  font-size: 18px;
+  width: 30%;
+}
+
+.descuentos {
+  font-size: 16px;
+  width: 70%;
+}
+.descripciones {
+  font-size: 12px;
+}
+
+/* ******************fin  main****************** */
+
+/* *****************inicio footer**************************** */
+footer section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+footer i[class^="fa"] {
+  margin-bottom: 10px;
+
+  color: #1259c3;
+  font-size: 25px;
+}
+/* ************** fin footer *********************************** */
+
+/*---------------Media querie Tablets-------------------*/
+
+@media (min-width: 700px) {
+  .logo,
+  .form {
+    width: 33%;
+  }
+  .burger-menu {
+    display: none;
+  }
+
+  .header-text {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+
+    letter-spacing: 1.3px;
+  }
+  .container-article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  article {
+    display: block;
+
+    width: 45%;
+  }
+  nav ul {
+    display: block;
+  }
+
+  .menu-left,
+  .menu-right {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+  }
+  .menu-left li {
+    margin: 0 5px;
+  }
+  .container-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  input::placeholder {
+    font-size: 1em;
+  }
+  input[type="search"] {
+    width: 85%;
+  }
+
+  i[class^="fa"] {
+    margin: 0 8px;
+    font-size: 1.2em;
+  }
+
+  i[class*="search"] {
+    display: inline;
+    margin: 0;
+  }
+}
+/*-----------------------------Media querie Desktop------------------------------- */
+@media (min-width: 1000px) {
+  
+  main {
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+  }
+  .header-text {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+
+    letter-spacing: 1.3px;
+  }
+  .container-nav {
+    font-size: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1060px;
+    justify-content: space-between;
+  }
+  article {
+    width: 20%;
+  }
+  .descripciones {
+    display: none;
+  }
+  article:hover .descripciones {
+    display: block;
+  }
+  article:hover {
+    box-shadow: 0 0 10px rgb(100 100 100);
+  }
+  .container i[class^="fa"]:hover {
+    transform: rotate(-90deg);
+  }
+  input::placeholder {
+    font-size: 1.2em;
+  }
+  .contenedor-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+.contenedor-footer section{
+  width: 30%;
+}
+  
+  footer i[class^="fa"] {
+    font-size: 2.5rem;
+    transition: all 0.3s;
+  }
+  footer i[class^="fa"]:hover {
+    color: #39b54a;
+  }
+}

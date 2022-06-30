@@ -1,0 +1,54 @@
+main {
+  margin: 0 auto;
+}
+main form {
+  max-width: 600px;
+  margin: 0 auto;
+
+  padding: 20px;
+}
+
+.input-block,
+.checkbox-block,
+input[type="password"] {
+  width: 95%;
+  height: 40px;
+  margin-bottom: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.checkbox-block {
+  margin-bottom: 10px;
+}
+
+main label {
+  font-size: 1.3em;
+  margin-left: 10px;
+}
+fieldset {
+  padding: 20px;
+  margin-bottom: 15px;
+}
+legend {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+.form-button {
+  padding: 10px;
+  background-color: #39b54a;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  color: rgb(243, 240, 240);
+  transition: all 0.4s;
+}
+
+.form-button:hover {
+  background-color: #0022aa;
+
+  cursor: pointer;
+}
