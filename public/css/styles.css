@@ -231,7 +231,6 @@ footer i[class^="fa"] {
 }
 /*-----------------------------Media querie Desktop------------------------------- */
 @media (min-width: 1000px) {
-  
   main {
     padding-bottom: 20px;
     margin-bottom: 80px;
@@ -253,10 +252,10 @@ footer i[class^="fa"] {
     width: 20%;
   }
   .descripciones {
-    display: none;
+    visibility: hidden;
   }
   article:hover .descripciones {
-    display: block;
+    visibility: visible;
   }
   article:hover {
     box-shadow: 0 0 10px rgb(100 100 100);
@@ -272,10 +271,10 @@ footer i[class^="fa"] {
     justify-content: space-around;
     align-items: center;
   }
-.contenedor-footer section{
-  width: 30%;
-}
-  
+  .contenedor-footer section {
+    width: 30%;
+  }
+
   footer i[class^="fa"] {
     font-size: 2.5rem;
     transition: all 0.3s;
